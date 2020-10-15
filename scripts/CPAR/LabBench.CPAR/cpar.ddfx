@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<device assembly="LabBench.CPAR" 
+        factory="LabBench.CPAR.CPARDevice" 
+        port="COM18" 
+        profiling="true"
+        number-of-trials="100" 
+        test-delay="10" />        

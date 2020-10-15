@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net472</TargetFrameworks>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Inventors' Way</Authors>
+    <Company>Inventors' Way ApS</Company>
+    <Product>LabBench device driver for the CPAR Pressure Algometer</Product>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <Copyright>Copyright 2019 Inventors Way ApS</Copyright>
+    <PackageProjectUrl>https://github.com/Inventors-Way/LabBench.CPAR</PackageProjectUrl>
+    <PackageIcon>Logo128x128.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/Inventors-Way/LabBench.CPAR</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Inventors.ECP" Version="1.4.9" />
+    <PackageReference Include="Inventors.Logging" Version="2.1.3" />
+    <PackageReference Include="LabBench.Interface" Version="0.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Functions\" />
+    <Folder Include="Messages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="cpar.ddfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Logo128x128.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
